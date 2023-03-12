@@ -22,11 +22,9 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="UwU ", help_command=None, intents=intents)
 
+
 # Load cogs
-initial_extensions = [
-    "cogs.hello",
-    "cogs.rename",
-]
+initial_extensions = ["cogs.ping", "cogs.rename", "cogs.roll", "cogs.help"]
 
 
 @bot.event

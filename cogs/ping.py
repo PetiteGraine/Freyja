@@ -5,14 +5,14 @@ from bot_utils import guild
 import asyncio
 
 
-class Hello(commands.Cog):
+class Ping(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @app_commands.command(name="hello", description="Say something")
-    async def hello(self, interaction):
+    @app_commands.command(name="ping", description="Say UwU")
+    async def ping(self, interaction):
         await interaction.response.send_message("UwU")
 
 
 async def setup(bot):
-    await bot.add_cog(Hello(bot), guilds=[guild])
+    await bot.add_cog(Ping(bot), guilds=[guild])
