@@ -6,5 +6,6 @@ configuration = safe_load(configuration_file.read())
 
 TOKEN = configuration["token"]
 GUILD_ID = configuration["guild_id"]
+SHYN3SS_ID = configuration["shyn3ss_id"]
 
 guild = discord.Object(id=GUILD_ID)

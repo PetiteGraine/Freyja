@@ -1,7 +1,6 @@
 import discord
 import asyncio
-from bot_utils import TOKEN
-from bot_utils import guild
+from bot_utils import TOKEN, guild, SHYN3SS_ID
 from discord.ext import commands
 import logging
 from random import choice
@@ -10,6 +9,7 @@ from discord.utils import get
 
 from discord.utils import _ColourFormatter
 from time import sleep
+
 
 log = logging.getLogger("UwU")
 log.setLevel(logging.DEBUG)
@@ -32,18 +32,7 @@ initial_extensions = [
 @bot.event
 async def on_ready():
     log.info(f"Connecté en tant que {bot.user}")
-    if not bot.synced:
-        log.info("Syncing...")
-        fmt = await bot.tree.sync(guild=bot.guild_object)
-        s = "" if len(fmt) < 2 else "s"
-        log.info("Sync complete")
-        log.info(f"{len(fmt)} commande{s} synchronisée{s}.")
-        bot.synced = True
-
-    bot.guild = bot.get_guild(guild)
-    bot.shyn3ss = await bot.guild.fetch_member(200610609476141057)
     await bot.tree.sync(guild=guild)
-    print("Yo")
 
 
 async def load():
