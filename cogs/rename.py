@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-from bot_utils import guild
+from discord.utils import get
+from bot_utils import guild, SHYN3SS_ID
 import random
 import asyncio
 
@@ -15,15 +16,24 @@ for name in names:
         f.write(name + "\n")
 f.close()
 
+shyn3ss = 0
+
 
 class Rename(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+    @commands.Cog.listener()
+    async def on_ready(self):
+        global shyn3ss
+        g = self.bot.guilds[0]
+        shyn3ss = await g.fetch_member(1084328393484533790)
+
     @app_commands.command(name="rename", description="Rename someone")
-    async def rename(self, interaction, member: discord.Member):
+    async def rename(self, interaction):
+        global shyn3ss
         new_nickname = names[random.randint(0, len(names))]
-        await member.edit(nick=new_nickname)
+        await shyn3ss.edit(nick=new_nickname)
         await interaction.response.send_message(new_nickname, ephemeral=True)
 
 

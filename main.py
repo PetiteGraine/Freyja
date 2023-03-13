@@ -29,7 +29,7 @@ initial_extensions = ["cogs.ping", "cogs.rename", "cogs.roll", "cogs.help"]
 
 @bot.event
 async def on_ready():
-    log.info(f"Connecté en tant que {bot.user}")
+    log.info(f"Logged as {bot.user}")
     await bot.tree.sync(guild=guild)
 
 
@@ -37,7 +37,7 @@ async def load():
     for extension in initial_extensions:
         try:
             await bot.load_extension(extension)
-            print(extension, " chargé avec succès !")
+            print(extension, " is loaded !")
         except Exception as e:
             log.error(f"Failed to load extension {extension}")
             log.error(e)
