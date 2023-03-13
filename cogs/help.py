@@ -16,7 +16,9 @@ class Help(commands.Cog):
             + "/rename <member> : rename the member randomly\n"
             + "/roll <man=100> <min=1> : give a random number between min and max\n"
         )
-        embed = discord.Embed(title="Better_Shyn3ss - help menu")
+        embed = discord.Embed(
+            title="Better_Shyn3ss - help menu", colour=discord.Colour(14723497)
+        )
         embed.add_field(name="Commands:", value=value, inline=False)
         file = discord.File("./img/icon_bot.png", filename="icon_bot.png")
         embed.set_thumbnail(url="attachment://icon_bot.png")

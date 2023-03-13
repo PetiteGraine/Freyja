@@ -11,7 +11,7 @@ class Ping(commands.Cog):
 
     @app_commands.command(name="ping", description="Say UwU")
     async def ping(self, interaction):
-        await interaction.response.send_message("UwU")
+        await interaction.response.send_message("UwU " + interaction.user.mention)
 
 
 async def setup(bot):

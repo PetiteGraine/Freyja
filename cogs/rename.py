@@ -27,7 +27,7 @@ class Rename(commands.Cog):
     async def on_ready(self):
         global shyn3ss
         g = self.bot.guilds[0]
-        shyn3ss = await g.fetch_member(1084328393484533790)
+        shyn3ss = await g.fetch_member(1084714425027678228)
 
     @app_commands.command(name="rename", description="Rename someone")
     async def rename(self, interaction):
