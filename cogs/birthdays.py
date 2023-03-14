@@ -1,5 +1,4 @@
 import discord
-
 from discord.ext import commands
 from discord import app_commands
 from bot_utils import guild
@@ -10,19 +9,19 @@ with open("./data/birthdays.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 months = []
+
 for month in data:
     months.append(month)
 
 
-class Birthday(commands.Cog):
+class Birthdays(commands.Cog):
     def __init__(self, bot):
-
         self.bot = bot
 
     @app_commands.command(
-        name="birthday", description="Show the list of birthdays of SRBB's members"
+        name="birthdays", description="Show the list of birthdays of SRBB's members"
     )
-    async def birthday(self, interaction):
+    async def birthdays(self, interaction):
         embed = discord.Embed(
             title="Birthday of SRBB's members", colour=discord.Colour(14723497)
         )
@@ -39,5 +38,4 @@ class Birthday(commands.Cog):
 
 
 async def setup(bot):
-
-    await bot.add_cog(Birthday(bot), guilds=[guild])
+    await bot.add_cog(Birthdays(bot), guilds=[guild])

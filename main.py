@@ -29,7 +29,7 @@ initial_extensions = [
     "cogs.rename",
     "cogs.roll",
     "cogs.help",
-    "cogs.birthday",
+    "cogs.birthdays",
 ]
 
 
