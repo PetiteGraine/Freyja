@@ -15,7 +15,9 @@ class Roll(commands.Cog):
         if max < min:
             await interaction.response.send_message("max must be superior to min")
             return
-        await interaction.response.send_message(randint(min, max))
+        await interaction.response.send_message(
+            f"[{min}, {max}] -> {randint(min, max)}"
+        )
 
 
 async def setup(bot):
