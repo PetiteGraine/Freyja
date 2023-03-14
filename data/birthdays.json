@@ -30,10 +30,6 @@
     ],
     "April": [
         {
-            "name": "Alex",
-            "birthday": "01/04/2003"
-        },
-        {
             "name": "Antoine C.",
             "birthday": "04/04/2004"
         },
@@ -68,6 +64,11 @@
     ],
     "September": [],
     "October": [],
-    "November": [],
+    "November": [
+        {
+            "name": "Alex",
+            "birthday": "25/11/2003"
+        }
+    ],
     "December": []
 }
