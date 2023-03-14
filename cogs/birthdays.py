@@ -23,7 +23,7 @@ class Birthdays(commands.Cog):
     )
     async def birthdays(self, interaction):
         embed = discord.Embed(
-            title="Birthday of SRBB's members", colour=discord.Colour(14723497)
+            title="Birthdays of SRBB's members", colour=discord.Colour(14723497)
         )
         for month in months:
             value = ""
