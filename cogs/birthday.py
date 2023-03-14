@@ -20,7 +20,7 @@ class Birthday(commands.Cog):
         self.bot = bot
 
     @app_commands.command(
-        name="birthday", description="Show the list of birthday of SRBB's members"
+        name="birthday", description="Show the list of birthdays of SRBB's members"
     )
     async def birthday(self, interaction):
         embed = discord.Embed(
