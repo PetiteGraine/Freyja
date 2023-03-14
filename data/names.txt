@@ -16,6 +16,7 @@ RéMillion
 RéMineur
 RéMinimum
 RéMiniscule
+RéMirage
 RéMisogyne
 RéMiss Ile de France
 RéMissile
@@ -28,6 +29,7 @@ RéMommy
 RéMunéré
 RéMusclé
 RéMysterion
+RéMystique
 RéMytho
 RémIgnare
 RémInsomnie
