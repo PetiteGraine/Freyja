@@ -1,6 +1,6 @@
 {
-    "Janvier": [],
-    "Février": [
+    "January": [],
+    "February": [
         {
             "name": "Killian",
             "birthday": "02/02/2001"
@@ -18,7 +18,7 @@
             "birthday": "17/02/2003"
         }
     ],
-    "Mars": [
+    "March": [
         {
             "name": "Nohémie",
             "birthday": "13/03/2003"
@@ -28,7 +28,7 @@
             "birthday": "13/03/2005"
         }
     ],
-    "Avril": [
+    "April": [
         {
             "name": "Alex",
             "birthday": "01/04/2003"
@@ -42,32 +42,32 @@
             "birthday": "15/04/2003"
         }
     ],
-    "Mai": [
+    "May": [
         {
             "name": "Quentin",
             "birthday": "10/05/2005"
         }
     ],
-    "Juin": [
+    "June": [
         {
             "name": "Rémi",
             "birthday": "19/06/2002"
         }
     ],
-    "Juillet": [
+    "July": [
         {
             "name": "Alban",
             "birthday": "14/07/2004"
         }
     ],
-    "Août": [
+    "August": [
         {
             "name": "Corentin",
             "birthday": "23/08/2004"
         }
     ],
-    "Septembre": [],
-    "Octobre": [],
-    "Novembre": [],
-    "Décembre": []
+    "September": [],
+    "October": [],
+    "November": [],
+    "December": []
 }
