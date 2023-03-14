@@ -6,11 +6,11 @@ from bot_utils import guild, SHYN3SS_ID
 import random
 import asyncio
 
-f = open("./data/noms.txt", "r", encoding="utf-8")
+f = open("./data/names.txt", "r", encoding="utf-8")
 names = sorted(f.read().split("\n"))
 names.remove("")
 f.close()
-f = open("./data/noms.txt", "w", encoding="utf-8")
+f = open("./data/names.txt", "w", encoding="utf-8")
 for name in names:
     if name != "":
         f.write(name + "\n")
