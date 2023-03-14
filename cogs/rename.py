@@ -34,7 +34,7 @@ class Rename(commands.Cog):
         global shyn3ss
         new_nickname = names[random.randint(0, len(names))]
         await shyn3ss.edit(nick=new_nickname)
-        await interaction.response.send_message(new_nickname, ephemeral=True)
+        await interaction.response.send_message(new_nickname)
 
 
 async def setup(bot):

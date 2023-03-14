@@ -24,7 +24,13 @@ bot = commands.Bot(command_prefix="UwU ", help_command=None, intents=intents)
 
 
 # Load cogs
-initial_extensions = ["cogs.ping", "cogs.rename", "cogs.roll", "cogs.help"]
+initial_extensions = [
+    "cogs.ping",
+    "cogs.rename",
+    "cogs.roll",
+    "cogs.help",
+    "cogs.birthday",
+]
 
 
 @bot.event

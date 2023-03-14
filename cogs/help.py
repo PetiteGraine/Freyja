@@ -20,9 +20,9 @@ class Help(commands.Cog):
             title="Better_Shyn3ss - help menu", colour=discord.Colour(14723497)
         )
         embed.add_field(name="Commands:", value=value, inline=False)
-        file = discord.File("./img/icon_bot.png", filename="icon_bot.png")
-        embed.set_thumbnail(url="attachment://icon_bot.png")
-        await interaction.response.send_message(file=file, embed=embed, ephemeral=True)
+        file = discord.File("./img/icon-bot.png", filename="icon-bot.png")
+        embed.set_thumbnail(url="attachment://icon-bot.png")
+        await interaction.response.send_message(file=file, embed=embed)
 
 
 async def setup(bot):
