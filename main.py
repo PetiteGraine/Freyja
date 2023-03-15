@@ -17,11 +17,12 @@ stream = logging.StreamHandler()
 stream.setFormatter(_ColourFormatter())
 log.addHandler(stream)
 
+
 class Bot(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.synced = True # change to False to sync
+        self.synced = None  # change to False to sync
         self.guild = None
         self.shyn3ss = None
 
@@ -47,7 +48,7 @@ async def on_ready():
 
     if not bot.synced:
         log.info("Syncing...")
-        fmt = await bot.tree.sync(guild = bot.guild_object)
+        fmt = await bot.tree.sync(guild=bot.guild)
         s = "" if len(fmt) < 2 else "s"
         log.info("Sync complete")
         log.info(f"{len(fmt)} commande{s} synchronisée{s}.")
