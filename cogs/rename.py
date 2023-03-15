@@ -16,24 +16,15 @@ for name in names:
         f.write(name + "\n")
 f.close()
 
-shyn3ss = 0
-
 
 class Rename(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.Cog.listener()
-    async def on_ready(self):
-        global shyn3ss
-        g = self.bot.guilds[0]
-        shyn3ss = await g.fetch_member(1084714425027678228)
-
     @app_commands.command(name="rename", description="Rename someone")
     async def rename(self, interaction):
-        global shyn3ss
         new_nickname = names[random.randint(0, len(names))]
-        await shyn3ss.edit(nick=new_nickname)
+        await self.bot.shyn3ss.edit(nick=new_nickname)
         await interaction.response.send_message(new_nickname)
 
 
