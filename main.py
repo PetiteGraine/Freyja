@@ -1,6 +1,6 @@
 import discord
 import asyncio
-from bot_utils import TOKEN, guild, SHYN3SS_ID
+from bot_utils import TOKEN, GUILD_ID, guild, SHYN3SS_ID
 from discord.ext import commands
 import logging
 from random import choice
@@ -10,7 +10,6 @@ from discord.utils import get
 from discord.utils import _ColourFormatter
 from time import sleep
 
-
 log = logging.getLogger("UwU")
 log.setLevel(logging.DEBUG)
 
@@ -18,9 +17,18 @@ stream = logging.StreamHandler()
 stream.setFormatter(_ColourFormatter())
 log.addHandler(stream)
 
+class Bot(commands.Bot):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.synced = True # change to False to sync
+        self.guild = None
+        self.shyn3ss = None
+
+
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix="UwU ", help_command=None, intents=intents)
+bot = Bot(command_prefix="UwU ", help_command=None, intents=intents)
 
 
 # Load cogs
@@ -36,7 +44,17 @@ initial_extensions = [
 @bot.event
 async def on_ready():
     log.info(f"Logged as {bot.user}")
-    await bot.tree.sync(guild=guild)
+
+    if not bot.synced:
+        log.info("Syncing...")
+        fmt = await bot.tree.sync(guild = bot.guild_object)
+        s = "" if len(fmt) < 2 else "s"
+        log.info("Sync complete")
+        log.info(f"{len(fmt)} commande{s} synchronisée{s}.")
+        bot.synced = True
+
+    bot.guild = bot.get_guild(GUILD_ID)
+    bot.shyn3ss = await bot.guild.fetch_member(SHYNESS_ID)
 
 
 async def load():
