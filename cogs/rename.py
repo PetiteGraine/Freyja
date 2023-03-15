@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 from discord.utils import get
-from bot_utils import guild, SHYN3SS_ID
+from bot_utils import guild
 import random
 import asyncio
 

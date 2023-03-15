@@ -22,7 +22,7 @@ class Bot(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.synced = None  # change to False to sync
+        self.synced = True  # change to False to sync
         self.guild = None
         self.shyn3ss = None
 
@@ -55,7 +55,7 @@ async def on_ready():
         bot.synced = True
 
     bot.guild = bot.get_guild(GUILD_ID)
-    bot.shyn3ss = await bot.guild.fetch_member(SHYNESS_ID)
+    bot.shyn3ss = await bot.guild.fetch_member(SHYN3SS_ID)
 
 
 async def load():
