@@ -48,7 +48,7 @@ async def on_ready():
 
     if not bot.synced:
         log.info("Syncing...")
-        fmt = await bot.tree.sync(guild=bot.guild)
+        fmt = await bot.tree.sync(guild=guild)
         s = "" if len(fmt) < 2 else "s"
         log.info("Sync complete")
         log.info(f"{len(fmt)} commande{s} synchronisée{s}.")
