@@ -1,5 +1,10 @@
 {
-    "January": [],
+    "January": [
+        {
+            "name": "Dimitri",
+            "birthday": "23/01/2003"
+        }
+    ],
     "February": [
         {
             "name": "Killian",
