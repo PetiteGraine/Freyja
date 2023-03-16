@@ -1,20 +1,24 @@
+RemisentSleeper
 Ré pain de mie
 RéMILF
 RéMaestro
 RéMagicien
+RéMalade
+RéMalphite
 RéMashochiste
 RéMastermind
 RéMiaou
 RéMichto
 RéMicro
 RéMiddleFinger
-RéMiddlyinfuriating
+RéMidlyinfuriating
 RéMiel
 RéMignon
 RéMikado
 RéMiku
 RéMillion
 RéMineur
+RéMini Gnar
 RéMinimum
 RéMiniscule
 RéMirage
@@ -24,15 +28,19 @@ RéMissile
 RéMission
 RéMissionaire
 RéMistral gagnant
+RéMitigé
 RéMitraillette
 RéMixe
 RéMommy
 RéMunéré
 RéMusclé
+RéMybad
 RéMysterion
 RéMystique
 RéMytho
+RémIdiot
 RémIgnare
+RémIllégal
 RémInsomnie
 Rémi sans famille
 RémiDoLaSiSol
