@@ -1,7 +1,9 @@
+CraieMi
 RemisentSleeper
 Ré pain de mie
 RéMILF
 RéMaestro
+RéMagicarpe
 RéMagicien
 RéMalade
 RéMalphite
@@ -22,16 +24,20 @@ RéMini Gnar
 RéMinimum
 RéMiniscule
 RéMirage
+RéMiskine
 RéMisogyne
 RéMiss Ile de France
 RéMissile
 RéMission
 RéMissionaire
 RéMistral gagnant
+RéMiteux
 RéMitigé
+RéMitochondrie
 RéMitraillette
 RéMixe
 RéMommy
+RéMoustillon
 RéMunéré
 RéMusclé
 RéMybad
@@ -41,6 +47,8 @@ RéMytho
 RémIdiot
 RémIgnare
 RémIllégal
+RémInconscient
 RémInsomnie
 Rémi sans famille
 RémiDoLaSiSol
+Réminiscence
