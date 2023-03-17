@@ -9,9 +9,10 @@ RéMalade
 RéMalphite
 RéMashochiste
 RéMastermind
+RéMaximal
 RéMiaou
 RéMichto
-RéMicro
+RéMicrophone
 RéMiddleFinger
 RéMidlyinfuriating
 RéMiel
@@ -23,6 +24,7 @@ RéMineur
 RéMini Gnar
 RéMinimum
 RéMiniscule
+RéMiraculeux
 RéMirage
 RéMiskine
 RéMisogyne
@@ -38,6 +40,7 @@ RéMitraillette
 RéMixe
 RéMommy
 RéMoustillon
+RéMoyen
 RéMunéré
 RéMusclé
 RéMybad
