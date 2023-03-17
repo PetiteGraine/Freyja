@@ -1,15 +1,18 @@
 CraieMi
 RemisentSleeper
 Ré pain de mie
+RéMID
 RéMILF
 RéMaestro
 RéMagicarpe
 RéMagicien
 RéMalade
 RéMalphite
+RéManta
 RéMashochiste
 RéMastermind
 RéMaximal
+RéMexicain
 RéMiaou
 RéMichto
 RéMicrophone
@@ -39,6 +42,8 @@ RéMitochondrie
 RéMitraillette
 RéMixe
 RéMommy
+RéMort
+RéMortDeRire
 RéMoustillon
 RéMoyen
 RéMunéré
@@ -47,11 +52,18 @@ RéMybad
 RéMysterion
 RéMystique
 RéMytho
+RéMéhicain
+RémADC
+RémAnnulé
+RémIVG
 RémIdiot
 RémIgnare
 RémIllégal
 RémInconscient
+RémIndolore
 RémInsomnie
+Rémi GAILLARD
 Rémi sans famille
 RémiDoLaSiSol
 Réminiscence
+RémuruLeThug
