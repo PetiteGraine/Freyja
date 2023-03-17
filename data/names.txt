@@ -3,7 +3,6 @@ RemisentSleeper
 Ré pain de mie
 RéMID
 RéMILF
-RéMaestro
 RéMagicarpe
 RéMagicien
 RéMalade
@@ -45,7 +44,6 @@ RéMommy
 RéMort
 RéMortDeRire
 RéMoustillon
-RéMoyen
 RéMunéré
 RéMusclé
 RéMybad
@@ -64,6 +62,7 @@ RémIndolore
 RémInsomnie
 Rémi GAILLARD
 Rémi sans famille
+Rémi-chan
 RémiDoLaSiSol
 Réminiscence
 RémuruLeThug
