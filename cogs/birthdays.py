@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-from bot_utils import guild
+from bot_utils import guild, COLOR_BOT
 import asyncio
 import json
 
@@ -23,7 +23,7 @@ class Birthdays(commands.Cog):
     )
     async def birthdays(self, interaction):
         embed = discord.Embed(
-            title="Birthdays of SRBB's members", colour=discord.Colour(14723497)
+            title="Birthdays of SRBB's members", colour=discord.Colour(COLOR_BOT)
         )
         for month in months:
             value = ""

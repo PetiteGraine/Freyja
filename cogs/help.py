@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from discord import app_commands
-from bot_utils import guild
+from bot_utils import guild, COLOR_BOT
 import asyncio
 
 
@@ -18,7 +18,7 @@ class Help(commands.Cog):
             + "/roll <man=100> <min=1> : give a random number between min and max\n"
         )
         embed = discord.Embed(
-            title="Better_Shyn3ss - help menu", colour=discord.Colour(14723497)
+            title="Better_Shyn3ss - help menu", colour=discord.Colour(COLOR_BOT)
         )
         embed.add_field(name="Commands:", value=value, inline=False)
         file = discord.File("./img/icon-bot.png", filename="icon-bot.png")
