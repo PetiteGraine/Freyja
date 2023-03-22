@@ -79,6 +79,7 @@ RémImposteur
 RémInconscient
 RémIndolore
 RémInestimable
+RémInfaillible
 RémInflammable
 RémInsane
 RémInsomnie
