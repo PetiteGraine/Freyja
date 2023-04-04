@@ -13,12 +13,12 @@ class Help(commands.Cog):
     async def help(self, interaction):
         value = (
             "/birthday : show the list of birthdays of SRBB's members\n"
-            + "/ping : the bot say UwU\n"
-            + "/rename <member> : rename the member randomly\n"
-            + "/roll <man=100> <min=1> : give a random number between min and max\n"
+            + "/ping : mention the user\n"
+            + "/rename <member> : rename Shyn3ss#4125 randomly\n"
+            + "/roll <max=100> <min=1> : give a random integer between min and max\n"
         )
         embed = discord.Embed(
-            title="Better_Shyn3ss - help menu", colour=discord.Colour(COLOR_BOT)
+            title="Freyja - help menu", colour=discord.Colour(COLOR_BOT)
         )
         embed.add_field(name="Commands:", value=value, inline=False)
         file = discord.File("./img/icon-bot.png", filename="icon-bot.png")

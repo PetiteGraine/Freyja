@@ -10,7 +10,7 @@ from discord.utils import get
 from discord.utils import _ColourFormatter
 from time import sleep
 
-log = logging.getLogger("UwU")
+log = logging.getLogger("Freyja")
 log.setLevel(logging.DEBUG)
 
 stream = logging.StreamHandler()
@@ -29,7 +29,7 @@ class Bot(commands.Bot):
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = Bot(command_prefix="UwU ", help_command=None, intents=intents)
+bot = Bot(command_prefix="Freyja ", help_command=None, intents=intents)
 
 
 # Load cogs
