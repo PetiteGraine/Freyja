@@ -13,7 +13,9 @@ class Roll(commands.Cog):
     @app_commands.command(name="roll", description="Give a random integer")
     async def roll(self, interaction, max: int = 100, min: int = 1):
         if max < min:
-            await interaction.response.send_message("max must be superior to min")
+            await interaction.response.send_message(
+                "max must be superior to min", ephemeral=True
+            )
             return
         await interaction.response.send_message(
             f"[{min}, {max}] -> {randint(min, max)}"

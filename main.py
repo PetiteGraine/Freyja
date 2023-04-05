@@ -22,7 +22,7 @@ class Bot(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.synced = True  # change to False to sync
+        self.synced = False  # change to False to sync
         self.guild = None
         self.shyn3ss = None
 

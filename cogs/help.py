@@ -12,7 +12,7 @@ class Help(commands.Cog):
     @app_commands.command(name="help", description="Show the list of commands")
     async def help(self, interaction):
         value = (
-            "/birthday : show the list of birthdays of SRBB's members\n"
+            "/birthdays : show the list of birthdays of SRBB's members\n"
             + "/ping : mention the user\n"
             + "/rename <member> : rename Shyn3ss#4125 randomly\n"
             + "/roll <max=100> <min=1> : give a random integer between min and max\n"
