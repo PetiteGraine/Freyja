@@ -21,7 +21,7 @@ class Rename(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @app_commands.command(name="rename", description="Rename Shyn3ss#4125 randomly")
+    @app_commands.command(name="rename", description="Rename petitegraine randomly")
     async def rename(self, interaction):
         new_nickname = names[random.randint(0, len(names))]
         await self.bot.shyn3ss.edit(nick=new_nickname)
