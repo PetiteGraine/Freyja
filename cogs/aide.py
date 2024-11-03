@@ -12,7 +12,7 @@ class Aide(commands.Cog):
     async def aide(self, interaction):
         value = (
             "/anniversaires : affiche la liste des anniversaires des membre de SRBB\n"
-            + "/roll <max=2^63-1> <min=1> : renvoie un nombre entier au hasard entre min et max\n"
+            + "/roll <max=100> <min=1> : renvoie un nombre entier au hasard entre min et max\n"
             + "/pileOuFace : renvoie au hasard soit pile soit face\n"
             + "/tirage_au_sort <options>: tire au sort parmi plusieurs options\n"
             + "/rappel : définit un rappel\n"
