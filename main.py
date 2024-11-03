@@ -1,14 +1,9 @@
 import discord
 import asyncio
-from bot_utils import TOKEN, GUILD_ID, guild, SHYN3SS_ID
+from bot_utils import TOKEN, GUILD_ID, guild
 from discord.ext import commands
 import logging
-from random import choice
-
-from discord.utils import get
-
 from discord.utils import _ColourFormatter
-from time import sleep
 
 log = logging.getLogger("Freyja")
 log.setLevel(logging.DEBUG)
@@ -34,11 +29,12 @@ bot = Bot(command_prefix="Freyja ", help_command=None, intents=intents)
 
 # Load cogs
 initial_extensions = [
-    "cogs.ping",
-    "cogs.rename",
+    "cogs.aide",
+    "cogs.anniversaires",
     "cogs.roll",
-    "cogs.help",
-    "cogs.birthdays",
+    "cogs.pileOuFace",
+    "cogs.rappel",
+    "cogs.tirageAuSort",
 ]
 
 
@@ -55,7 +51,6 @@ async def on_ready():
         bot.synced = True
 
     bot.guild = bot.get_guild(GUILD_ID)
-    bot.shyn3ss = await bot.guild.fetch_member(SHYN3SS_ID)
 
 
 async def load():
