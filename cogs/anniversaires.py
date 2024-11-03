@@ -27,7 +27,7 @@ class Anniversaires(commands.Cog):
                 value += f"{hb['nom']:<20} {hb['anniversaire']}\n"
             value += "```"
             
-            if value.strip() != "``` ```":
+            if value.strip() != "``````":
                 embed.add_field(name=f"{month}:", value=value, inline=False)
         
         file = discord.File("./img/icon-srbb.png", filename="icon-srbb.png")
