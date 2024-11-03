@@ -29,9 +29,9 @@ initial_extensions = [
     "cogs.aide",
     "cogs.anniversaires",
     "cogs.roulette",
-    "cogs.pileOuFace",
+    "cogs.pile_ou_face",
     "cogs.rappel",
-    "cogs.tirageAuSort",
+    "cogs.tirage_au_sort",
 ]
 
 @bot.event
