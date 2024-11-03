@@ -9,6 +9,8 @@ class Roll(commands.Cog):
         self.bot = bot
 
     @app_commands.command(name="roll", description="Renvoie un nombre entier au hasard entre min et max")
+    @app_commands.describe(min="Nombre minimal")
+    @app_commands.describe(max="Nombre maximal")
     async def roll(self, interaction, max: int = 100, min: int = 1):
         if max < min:
             await interaction.response.send_message(
