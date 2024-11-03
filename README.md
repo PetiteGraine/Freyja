@@ -1,7 +1,7 @@
 # Freyja
 A personal discord bot with simple features.
 
-### Commands
+### Examples of some commands
 /aide <br>
 ![aide](https://github.com/user-attachments/assets/22523bd0-a9e5-47cc-a458-fe9db1099dce)
 
