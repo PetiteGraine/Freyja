@@ -7,11 +7,7 @@ import json
 with open("./data/anniversaires.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
-months = []
-
-for month in data:
-    months.append(month)
-
+months = [month for month in data]
 
 class Anniversaires(commands.Cog):
     def __init__(self, bot):
@@ -24,17 +20,19 @@ class Anniversaires(commands.Cog):
         embed = discord.Embed(
             title="Liste des anniversaires des membres de SRBB", colour=discord.Colour(COLOR_BOT)
         )
+        
         for month in months:
-            value = ""
+            value = "```"
             for hb in data[month]:
-                value += hb["nom"] + "    " + hb["anniversaire"] + "\n"
-            if value == "":
-                continue
-            embed.add_field(name=f"{month}:", value=value, inline=False)
+                value += f"{hb['nom']:<20} {hb['anniversaire']}\n"
+            value += "```"
+            
+            if value.strip() != "``` ```":
+                embed.add_field(name=f"{month}:", value=value, inline=False)
+        
         file = discord.File("./img/icon-srbb.png", filename="icon-srbb.png")
         embed.set_thumbnail(url="attachment://icon-srbb.png")
         await interaction.response.send_message(file=file, embed=embed)
-
 
 async def setup(bot):
     await bot.add_cog(Anniversaires(bot), guilds=[guild])

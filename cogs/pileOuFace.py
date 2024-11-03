@@ -3,7 +3,6 @@ from discord import app_commands
 from bot_utils import guild
 from random import randint
 
-
 class PileOuFace(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -18,7 +17,6 @@ class PileOuFace(commands.Cog):
         await interaction.response.send_message(
                 "Face"
             )
-
 
 async def setup(bot):
     await bot.add_cog(PileOuFace(bot), guilds=[guild])

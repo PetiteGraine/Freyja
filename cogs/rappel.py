@@ -10,7 +10,7 @@ class Rappel(commands.Cog):
     @app_commands.command(name="rappel", description="Définit un rappel")
     @app_commands.describe(time="Temps en minutes avant le rappel", msg="Message à rappeler")
     async def rappel(self, interaction, time: int, *, msg: str):
-        await interaction.response.send_message(f"Rappel configuré pour dans {time} minute(s) : \"{msg}\"", ephemeral=True)
+        await interaction.response.send_message(f"Rappel configuré pour dans {time} minute(s) : \"{msg}\"")
 
         await asyncio.sleep(time * 60)
         

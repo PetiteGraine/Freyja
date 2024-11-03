@@ -12,7 +12,6 @@ stream = logging.StreamHandler()
 stream.setFormatter(_ColourFormatter())
 log.addHandler(stream)
 
-
 class Bot(commands.Bot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -21,22 +20,19 @@ class Bot(commands.Bot):
         self.guild = None
         self.shyn3ss = None
 
-
 intents = discord.Intents.default()
 intents.message_content = True
 bot = Bot(command_prefix="Freyja ", help_command=None, intents=intents)
-
 
 # Load cogs
 initial_extensions = [
     "cogs.aide",
     "cogs.anniversaires",
-    "cogs.roll",
+    "cogs.roulette",
     "cogs.pileOuFace",
     "cogs.rappel",
     "cogs.tirageAuSort",
 ]
-
 
 @bot.event
 async def on_ready():
@@ -52,7 +48,6 @@ async def on_ready():
 
     bot.guild = bot.get_guild(GUILD_ID)
 
-
 async def load():
     for extension in initial_extensions:
         try:
@@ -62,10 +57,8 @@ async def load():
             log.error(f"Failed to load extension {extension}")
             log.error(e)
 
-
 async def main():
     await load()
     await bot.start(TOKEN)
-
 
 asyncio.run(main())
